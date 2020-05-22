@@ -1,0 +1,205 @@
+html, body{
+    margin: 0 auto;
+}
+p, h1, h2 {
+    font-family: 'Ubuntu', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: blue;
+}
+
+@media only screen and (min-width: 320px) {
+    body {
+      background-color: lightblue;
+    }
+    .wrapper {
+        width: 80%;
+        text-align: center;
+    }
+    .one {
+        justify-content: center;
+    }
+    .about-project {
+        width: 55%;
+        margin: 0 auto;
+        padding-bottom: 10%;
+        padding-top: 0;
+    }
+    img{
+        width: 70%;
+        height: 45%;
+        padding-top: 5%;
+    }
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .intro {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .menu {
+        display: block;
+    }
+    .prof-pic {
+        width: 55%;
+    }
+    .contact-info {
+        padding-top: 10px;
+        color: darkslategray;
+        font-size: 18px;
+        padding-bottom: 2%;
+    }
+    .top-btn{
+        float: right;
+    }
+    .name-bot{
+        float: left;
+    }
+    .foot-border {
+        border-top: solid darkgrey 2px;
+        margin: 0 auto;
+        width: 80%;
+    }
+    .footer-cont {
+        margin-top: 15%;
+    }
+    .menu-bottom{
+        display: none;
+    }
+}
+
+  @media only screen and (min-width: 768px) {
+    body {
+      background-color: lightblue;
+    }
+    .main-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .one, .two, .three, .four, .five, .six {
+        width: 45%;
+        height: 50%;
+        margin: 0;
+        padding: 0;
+    }
+    .menu {
+        display: flex;
+        justify-content: center;
+    }
+    .menu-item {
+        padding-left: 2%;
+        padding-right: 2%;
+        font-size: 18px;
+    }
+    .top-name {
+        font-size: 22px;
+        padding-top: 5%;
+    }
+    .about-flex{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding-top: 2%;
+    }
+    .prof-pic{
+        padding: 0 2% 0 0;
+        width: 35%;
+        margin: 0;
+
+    }
+    .intro{
+        padding: 0 0 0 0;
+        width: 40%;
+        margin: 0;
+        text-align: left;
+    }
+    .menu-bottom{
+        display: none;
+    }
+    .footer-p {
+        width: 50%;
+        margin: 0 auto;
+    }
+  }
+
+
+  @media only screen and (min-width: 1024px) {
+    body {
+      background-color: lightblue;
+    }
+    h1 {
+        font-size: 38px;
+    }
+    p {
+        font-size: 30px;
+    }
+    .top-name{
+        font-size: 40px;
+        padding: 2% 0 0 0;
+        margin: 0;
+    }
+    .intro {
+        font-size: 24px;
+        color: darkslategray;
+    }
+    .menu-item {
+        font-size: 24px;
+    }
+    .footer-p {
+        font-size: 24px;
+        width: 30%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .flex-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 75%;
+        margin: 0 auto;
+    }
+    .menu {
+        margin: 0;
+    }
+    .prof-pic {
+        width: 25%;
+    }
+    .about-flex{
+        padding-bottom: 5%;
+    }
+    .one, .two, .three, .four, .five, .six {
+        width: 30%;
+        padding: 0 0 0 0;
+        box-sizing: border-box;
+    }
+    img{
+        width: 90%;
+    } 
+    .about-project {
+        width: 90%;
+        font-size: 18px;
+    }
+    .menu-bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .menu-item-bottom{
+        font-size: 18px;
+        padding: 0 1% 0 1%;
+    }
+    .name-bot{
+        font-size: 18px;
+    }
+    .top-btn {
+        display: none;
+    }
+  }
