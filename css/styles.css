@@ -1,7 +1,7 @@
 html, body{
     margin: 0 auto;
 }
-p, h1, h2 {
+p, h1, h2, li {
     font-family: 'Ubuntu', sans-serif;
 }
 a {
@@ -11,10 +11,17 @@ a {
 a:hover {
     color: blue;
 }
+li {
+    list-style: none;
+}
 
 @media only screen and (min-width: 320px) {
     body {
       background-color: lightblue;
+    }
+    .about-flex {
+        flex-direction: column-reverse;
+        display: flex;
     }
     .wrapper {
         width: 80%;
@@ -23,15 +30,21 @@ a:hover {
     .one {
         justify-content: center;
     }
+    .proj-title{
+        padding: 0;
+        margin: 0;
+    }
     .about-project {
-        width: 55%;
+        width: 90%;
         margin: 0 auto;
         padding-bottom: 10%;
         padding-top: 0;
+        font-size: 1.3em;
+        font-family: 'Raleway', sans-serif;
     }
     img{
-        width: 70%;
-        height: 45%;
+        width: 100%;
+        height: 65%;
         padding-top: 5%;
     }
     .main-content {
@@ -48,6 +61,8 @@ a:hover {
     }
     .prof-pic {
         width: 55%;
+        margin: 0 auto;
+        padding-bottom: 2.5%;
     }
     .contact-info {
         padding-top: 10px;
@@ -78,6 +93,14 @@ a:hover {
     body {
       background-color: lightblue;
     }
+    img{
+        width: 95%;
+    }
+    .about-project{
+        width: 90%;
+        font-size: 1.2em;
+        font-family: 'Raleway', sans-serif;
+    }
     .main-content {
         display: flex;
         flex-direction: row;
@@ -95,8 +118,8 @@ a:hover {
         justify-content: center;
     }
     .menu-item {
-        padding-left: 2%;
-        padding-right: 2%;
+        padding-left: 5%;
+        padding-right: 5%;
         font-size: 18px;
     }
     .top-name {
@@ -124,8 +147,9 @@ a:hover {
     .menu-bottom{
         display: none;
     }
+    
     .footer-p {
-        width: 50%;
+        width: 70%;
         margin: 0 auto;
     }
   }
@@ -149,13 +173,18 @@ a:hover {
     .intro {
         font-size: 24px;
         color: darkslategray;
+        padding: 0 5% 0 0;
+    }
+    .prof-pic {
+        width: 30%;
+
     }
     .menu-item {
         font-size: 24px;
     }
     .footer-p {
         font-size: 24px;
-        width: 30%;
+        width: 70%;
         margin: 0 auto;
         text-align: center;
     }
@@ -169,12 +198,6 @@ a:hover {
     .menu {
         margin: 0;
     }
-    .prof-pic {
-        width: 25%;
-    }
-    .about-flex{
-        padding-bottom: 5%;
-    }
     .one, .two, .three, .four, .five, .six {
         width: 30%;
         padding: 0 0 0 0;
@@ -186,6 +209,7 @@ a:hover {
     .about-project {
         width: 90%;
         font-size: 18px;
+        font-family: 'Raleway', sans-serif;
     }
     .menu-bottom{
         display: flex;
@@ -201,5 +225,24 @@ a:hover {
     }
     .top-btn {
         display: none;
+    }
+    .normal, .bold{
+        font-size: 20px;
+    }
+    .bold{
+        font-weight: bold;
+    }
+    .contact-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-cont{
+        padding-top: 0;
+        margin-top: 5%;
     }
   }
