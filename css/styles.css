@@ -13,7 +13,13 @@ a:hover {
 }
 li {
     list-style: none;
+
 }
+ul {
+    margin: 0 auto;
+    padding: 0;
+}
+
 
 @media only screen and (min-width: 320px) {
     body {
@@ -39,13 +45,13 @@ li {
         margin: 0 auto;
         padding-bottom: 10%;
         padding-top: 0;
-        font-size: 1.3em;
+        font-size: 16px;
         font-family: 'Raleway', sans-serif;
     }
     img{
         width: 100%;
-        height: 65%;
-        padding-top: 5%;
+        height: 60%;
+        padding-top: 10%;
     }
     .main-content {
         display: flex;
@@ -53,14 +59,16 @@ li {
         justify-content: center;
     }
     .intro {
-        width: 70%;
         margin: 0 auto;
     }
     .menu {
         display: block;
     }
+    .menu-item {
+        text-transform: uppercase;
+    }
     .prof-pic {
-        width: 55%;
+        width: 75%;
         margin: 0 auto;
         padding-bottom: 2.5%;
     }
@@ -79,10 +87,10 @@ li {
     .foot-border {
         border-top: solid darkgrey 2px;
         margin: 0 auto;
-        width: 80%;
+        width: 95%;
     }
     .footer-cont {
-        margin-top: 15%;
+        margin-top: 25%;
     }
     .menu-bottom{
         display: none;
@@ -113,14 +121,16 @@ li {
         margin: 0;
         padding: 0;
     }
-    .menu {
+    ul {
         display: flex;
         justify-content: center;
     }
     .menu-item {
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
         font-size: 18px;
+        flex-direction: row;
+        text-transform: uppercase;
     }
     .top-name {
         font-size: 22px;
@@ -133,7 +143,7 @@ li {
         padding-top: 2%;
     }
     .prof-pic{
-        padding: 0 2% 0 0;
+        padding: 0 0 0 0;
         width: 35%;
         margin: 0;
 
@@ -141,13 +151,21 @@ li {
     .intro{
         padding: 0 0 0 0;
         width: 40%;
-        margin: 0;
+        margin: 0 1em 0 0;
         text-align: left;
     }
     .menu-bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .menu-item-bottom{
+        font-size: 18px;
+        padding: 0 1% 0 1%;
+    }
+    .top-btn{
         display: none;
     }
-    
     .footer-p {
         width: 70%;
         margin: 0 auto;
@@ -161,14 +179,15 @@ li {
     }
     h1 {
         font-size: 38px;
+        padding: 0;
     }
     p {
         font-size: 30px;
     }
     .top-name{
         font-size: 40px;
-        padding: 2% 0 0 0;
         margin: 0;
+        padding: 0;
     }
     .intro {
         font-size: 24px;
@@ -178,9 +197,6 @@ li {
     .prof-pic {
         width: 30%;
 
-    }
-    .menu-item {
-        font-size: 24px;
     }
     .footer-p {
         font-size: 24px;
@@ -192,8 +208,10 @@ li {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         width: 75%;
         margin: 0 auto;
+        padding-top: 1em;
     }
     .menu {
         margin: 0;
@@ -210,15 +228,6 @@ li {
         width: 90%;
         font-size: 18px;
         font-family: 'Raleway', sans-serif;
-    }
-    .menu-bottom{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-    .menu-item-bottom{
-        font-size: 18px;
-        padding: 0 1% 0 1%;
     }
     .name-bot{
         font-size: 18px;
@@ -244,5 +253,17 @@ li {
     .footer-cont{
         padding-top: 0;
         margin-top: 5%;
+    }
+    .menu-item {
+        display: inline-block;
+        margin-left: 15px;
+        font-size: 18px;
+        padding: 0 5% 0 5%;
+        text-transform: uppercase;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
     }
   }
